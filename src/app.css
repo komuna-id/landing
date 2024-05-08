@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Reddit+Sans:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply bg-neutral-100 text-neutral-800;
+	}
+
+	.dimmed {
+		@apply text-neutral-600/90;
+	}
+}
