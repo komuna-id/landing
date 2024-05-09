@@ -8,7 +8,8 @@ export default {
 				sans: ['Manrope', 'sans-serif']
 			},
 			fontSize: {
-				sm: '0.85rem'
+				sm: '0.85rem',
+				base: '0.9425rem'
 			}
 		}
 	},

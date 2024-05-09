@@ -12,9 +12,9 @@
 			<a href="/">Komuna</a>
 		</p>
 		<div class="hidden md:flex items-center gap-7 text-sm font-semibold">
-			<a href="/" class="">Blog</a>
-			<a href="/" class="">Forum</a>
-			<a href="/" class="">Komuna UI</a>
+			<a href="https://blog.komuna.id" class="">Blog</a>
+			<a href="https://forum.komuna.id" class="">Forum</a>
+			<a href="https://ui.komuna.id" class="">Komuna UI</a>
 			<a href="/" class="">Tentang Kami</a>
 		</div>
 		<div class="ml-auto flex items-center gap-2">
@@ -23,8 +23,21 @@
 		</div>
 	</div>
 </div>
+<div class="pb-24" />
 
-<div class="h-screen px-6 text-center flex flex-col items-center justify-center">
-	<h1 class="font-display font-semibold tracking-wide text-3xl">Komuna</h1>
-	<p class="dimmed mt-2.5">Something great is about to come soon.</p>
+<div class="min-h-[430px] px-6 py-20 text-center flex flex-col items-center justify-center">
+	<h1 class="max-w-xl leading-10 font-display font-semibold tracking-wide text-3xl">
+		Bangun Komunitas Digital di Sini
+	</h1>
+	<p class="max-w-xl leading-7 dimmed mt-1.5">
+		Kembangkan jaringan, cari wawasan baru, dan jadilah bagian dari revolusi digital untuk
+		Indonesia.
+	</p>
+
+	<div
+		class="w-56 sm:w-full flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-2.5 mt-5"
+	>
+		<Button variant="primary">Daftar sekarang</Button>
+		<Button>Kunjungi forum</Button>
+	</div>
 </div>
