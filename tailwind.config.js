@@ -4,8 +4,11 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				display: ['Poppins', 'sans-serif'],
-				sans: ['Inter', 'sans-serif']
+				display: ['Reddit Sans', 'sans-serif'],
+				sans: ['Manrope', 'sans-serif']
+			},
+			fontSize: {
+				sm: '0.85rem'
 			}
 		}
 	},
