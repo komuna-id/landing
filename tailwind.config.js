@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				display: ['Reddit Sans', 'sans-serif'],
+				display: ['Poppins', 'sans-serif'],
 				sans: ['Inter', 'sans-serif']
 			}
 		}

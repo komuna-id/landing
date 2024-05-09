@@ -1,0 +1,13 @@
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	width="1em"
+	height="1em"
+	viewBox="0 0 64 64"
+	{...$$restProps}
+>
+	<circle cx="32" cy="32" r="30" fill="#3b82f6" />
+	<path
+		fill="#fafafa"
+		d="M20.2 17.5h6v12l11.2-12h7.8L33.3 29.4l12.5 17.1H38l-8.9-12.7l-2.9 3v9.7h-6z"
+	/>
+</svg>
