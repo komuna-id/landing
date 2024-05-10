@@ -22,7 +22,7 @@
 		'relative flex items-center justify-center whitespace-nowrap',
 		size === 'sm' && 'px-3.5 h-9 text-sm rounded-md',
 		size === 'md' && 'px-4 h-10 text-base rounded-md',
-		variant === 'default' && 'bg-blue-100/70 text-blue-600',
+		variant === 'default' && 'bg-blue-100/60 text-blue-600',
 		variant === 'primary' && 'bg-blue-600/90 text-neutral-50',
 		disabled && 'pointer-events-none opacity-65',
 		className,

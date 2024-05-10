@@ -1,5 +1,25 @@
 <script>
 	import { Button } from '$lib';
+	import Marquee from 'svelte-fast-marquee';
+	import {
+		CodeIcon,
+		CpuIcon,
+		DollarSignIcon,
+		GlobeIcon,
+		MapIcon,
+		MoonIcon,
+		SmileIcon
+	} from 'svelte-feather-icons';
+
+	const categories = [
+		{ icon: CodeIcon, text: 'Programming' },
+		{ icon: GlobeIcon, text: 'Internet' },
+		{ icon: MoonIcon, text: 'Astronomi' },
+		{ icon: SmileIcon, text: 'Hiburan' },
+		{ icon: CpuIcon, text: 'Komputer' },
+		{ icon: DollarSignIcon, text: 'Bisnis' },
+		{ icon: MapIcon, text: 'Traveling' }
+	];
 </script>
 
 <svelte:head>
@@ -35,9 +55,24 @@
 	</p>
 
 	<div
-		class="w-56 sm:w-full flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-2.5 mt-5"
+		class="w-56 sm:w-full flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 mt-4"
 	>
-		<Button variant="primary">Daftar sekarang</Button>
-		<Button>Kunjungi forum</Button>
+		<Button variant="primary">Masuk ke forum</Button>
+		<Button>Kunjungi blog</Button>
 	</div>
+</div>
+
+<div class="w-full max-w-screen-lg mx-auto px-5 py-8">
+	<p class="text-center font-medium dimmed text-base mb-7">
+		Gabung ke komunitas yang sefrekuensi denganmu
+	</p>
+
+	<Marquee speed={50} class="">
+		{#each categories as { icon, text }}
+			<div class="min-w-36 mr-7 bg-white border border-neutral-200 px-5 py-4 rounded-md">
+				<svelte:component this={icon} class="w-7 h-7 mx-auto mb-3 stroke-[1.675] text-blue-600" />
+				<p class="text-center">{text}</p>
+			</div>
+		{/each}
+	</Marquee>
 </div>

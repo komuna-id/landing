@@ -53,6 +53,9 @@ importers:
       svelte-check:
         specifier: ^3.6.0
         version: 3.7.1(postcss-load-config@4.0.2(postcss@8.4.38))(postcss@8.4.38)(svelte@4.2.16)
+      svelte-fast-marquee:
+        specifier: ^0.7.0
+        version: 0.7.0
       svelte-feather-icons:
         specifier: ^4.1.0
         version: 4.1.0
@@ -537,6 +540,9 @@ packages:
     hasBin: true
     peerDependencies:
       postcss: ^8.1.0
+
+  axobject-query@3.2.1:
+    resolution: {integrity: sha512-jsyHu61e6N4Vbz/v18DHwWYKK0bSWLqn47eeDSKPB7m8tqMHF9YJ+mhIk2lVteyZrY8tnSj/jHOv4YiTCuCJgg==}
 
   axobject-query@4.0.0:
     resolution: {integrity: sha512-+60uv1hiVFhHZeO+Lz0RYzsVHy5Wr1ayX0mwda9KPDVLNJgZ1T9Ny7VmFbLDzxsH0D87I86vgj3gFrjTJUYznw==}
@@ -1317,6 +1323,9 @@ packages:
       svelte:
         optional: true
 
+  svelte-fast-marquee@0.7.0:
+    resolution: {integrity: sha512-tAttI/fs2ISYeRqU6w6zsPNjVAQBXt7dS0uGegn17XfQkLn57idxuXRlNee1aTfG3zlEaidbgd2odyoDNttj3Q==}
+
   svelte-feather-icons@4.1.0:
     resolution: {integrity: sha512-fcTL4VzEN4BoccQJjKiui0b9DWEsmO6zGpI0tQTJbthRtNrYheoU487zyA1BD8rj9kj6jbKGmGVo7zbSdRvMvA==}
 
@@ -1366,6 +1375,10 @@ packages:
   svelte@3.59.2:
     resolution: {integrity: sha512-vzSyuGr3eEoAtT/A6bmajosJZIUWySzY2CzB3w2pgPvnkUjGqlDnsNnA0PMO+mMAhuyMul6C2uuZzY6ELSkzyA==}
     engines: {node: '>= 8'}
+
+  svelte@4.2.0:
+    resolution: {integrity: sha512-kVsdPjDbLrv74SmLSUzAsBGquMs4MPgWGkGLpH+PjOYnFOziAvENVzgJmyOCV2gntxE32aNm8/sqNKD6LbIpeQ==}
+    engines: {node: '>=16'}
 
   svelte@4.2.16:
     resolution: {integrity: sha512-mQwHpqHD2PmFcCyHaZ7XiTqposaLvJ75WpYcyY5/ce3qxbYtwQpZ+M7ZKP+2CG5U6kfnBZBpPLyofhlE6ROrnQ==}
@@ -1911,6 +1924,10 @@ snapshots:
       picocolors: 1.0.0
       postcss: 8.4.38
       postcss-value-parser: 4.2.0
+
+  axobject-query@3.2.1:
+    dependencies:
+      dequal: 2.0.3
 
   axobject-query@4.0.0:
     dependencies:
@@ -2708,6 +2725,10 @@ snapshots:
     optionalDependencies:
       svelte: 4.2.16
 
+  svelte-fast-marquee@0.7.0:
+    dependencies:
+      svelte: 4.2.0
+
   svelte-feather-icons@4.1.0:
     dependencies:
       svelte: 3.59.2
@@ -2730,6 +2751,22 @@ snapshots:
       typescript: 5.4.5
 
   svelte@3.59.2: {}
+
+  svelte@4.2.0:
+    dependencies:
+      '@ampproject/remapping': 2.3.0
+      '@jridgewell/sourcemap-codec': 1.4.15
+      '@jridgewell/trace-mapping': 0.3.25
+      acorn: 8.11.3
+      aria-query: 5.3.0
+      axobject-query: 3.2.1
+      code-red: 1.0.4
+      css-tree: 2.3.1
+      estree-walker: 3.0.3
+      is-reference: 3.0.2
+      locate-character: 3.0.0
+      magic-string: 0.30.10
+      periscopic: 3.1.0
 
   svelte@4.2.16:
     dependencies:
