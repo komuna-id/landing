@@ -1,5 +1,5 @@
 <script>
-	import { Button, Container } from '$lib';
+	import { Button, Container, Navbar } from '$lib';
 	import Marquee from 'svelte-fast-marquee';
 	import {
 		CodeIcon,
@@ -31,24 +31,22 @@
 	/>
 </svelte:head>
 
-<div class="fixed top-0 inset-x-0 bg-neutral-50 z-10 border-b border-neutral-200">
-	<Container class="h-[3.75rem] flex items-center">
-		<p class="font-display font-semibold tracking-wide text-lg mr-auto">
-			<a href="/">Komuna</a>
-		</p>
-		<div class="hidden md:flex items-center gap-9 text-sm font-semibold">
-			<a href="https://blog.komuna.id" class="">Blog</a>
-			<a href="https://forum.komuna.id" class="">Forum</a>
-			<a href="https://ui.komuna.id" class="">Komuna UI</a>
-			<a href="/" class="">Tentang Kami</a>
-		</div>
-		<div class="ml-auto flex items-center gap-2.5">
-			<Button size="sm">Login</Button>
-			<Button size="sm" variant="primary">Daftar</Button>
-		</div>
-	</Container>
-</div>
-<div class="pb-20" />
+<Navbar>
+	<p class="font-display font-semibold tracking-wide text-xl mr-auto">
+		<a href="/">Komuna</a>
+	</p>
+	<div class="hidden md:flex items-center gap-9 text-sm font-semibold">
+		<a href="https://blog.komuna.id" class="">Blog</a>
+		<a href="https://forum.komuna.id" class="">Forum</a>
+		<a href="https://ui.komuna.id" class="">Komuna UI</a>
+		<a href="/" class="">Tentang Kami</a>
+		<a href="https://github.com/komuna-id" class="">GitHub</a>
+	</div>
+	<div class="ml-auto flex items-center gap-2.5">
+		<Button href="https://account.komuna.id/auth/login" size="sm">Login</Button>
+		<Button href="https://account.komuna.id/auth/signup" size="sm" variant="primary">Daftar</Button>
+	</div>
+</Navbar>
 
 <div class="min-h-[450px] px-6 py-20 text-center flex flex-col items-center justify-center">
 	<h1
@@ -63,8 +61,8 @@
 	<div
 		class="w-56 sm:w-full flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 mt-5"
 	>
-		<Button variant="primary">Masuk ke forum</Button>
-		<Button>Kunjungi blog</Button>
+		<Button href="https://forum.komuna.id" variant="primary">Masuk ke forum</Button>
+		<Button href="https://blog.komuna.id">Kunjungi blog</Button>
 	</div>
 </div>
 
