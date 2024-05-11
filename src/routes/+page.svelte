@@ -1,5 +1,5 @@
 <script>
-	import { Button } from '$lib';
+	import { Button, Container } from '$lib';
 	import Marquee from 'svelte-fast-marquee';
 	import {
 		CodeIcon,
@@ -32,7 +32,7 @@
 </svelte:head>
 
 <div class="fixed top-0 inset-x-0 bg-neutral-50 z-10 border-b border-neutral-200">
-	<div class="w-full max-w-screen-lg mx-auto px-5 h-[3.75rem] flex items-center">
+	<Container class="h-[3.75rem] flex items-center">
 		<p class="font-display font-semibold tracking-wide text-lg mr-auto">
 			<a href="/">Komuna</a>
 		</p>
@@ -46,31 +46,29 @@
 			<Button size="sm">Login</Button>
 			<Button size="sm" variant="primary">Daftar</Button>
 		</div>
-	</div>
+	</Container>
 </div>
 <div class="pb-20" />
 
-<div class="min-h-[440px] px-6 py-20 text-center flex flex-col items-center justify-center">
-	<h1 class="max-w-xl leading-10 font-display font-semibold tracking-wide text-3xl">
+<div class="min-h-[450px] px-6 py-20 text-center flex flex-col items-center justify-center">
+	<h1
+		class="max-w-xl leading-9 md:leading-10 font-display font-semibold tracking-wide text-2xl md:text-3xl"
+	>
 		Gabung ke Komunitas IT Indonesia
 	</h1>
-	<p class="max-w-xl leading-7 dimmed mt-1.5">
+	<p class="max-w-xl leading-7 dimmed mt-2">
 		Kembangkan jaringan, cari wawasan baru, dan jadilah bagian dari revolusi digital untuk bangsa.
 	</p>
 
 	<div
-		class="w-56 sm:w-full flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 mt-4"
+		class="w-56 sm:w-full flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 mt-5"
 	>
 		<Button variant="primary">Masuk ke forum</Button>
 		<Button>Kunjungi blog</Button>
 	</div>
 </div>
 
-<div class="w-full max-w-screen-lg mx-auto px-0 md:px-5 py-8">
-	<p class="text-center font-medium dimmed text-base mb-6 px-6 md:px-0 leading-7">
-		Kumpul bareng orang-orang yang sefrekuensi
-	</p>
-
+<div class="w-full max-w-screen-lg mx-auto px-0 md:px-5 py-8 md:py-10">
 	<Marquee speed={50} class="">
 		{#each categories as { icon, text }}
 			<div class="min-w-36 mr-7 bg-white border border-neutral-200 px-5 py-4 rounded-md">
@@ -81,26 +79,26 @@
 	</Marquee>
 </div>
 
-<div
-	class="w-full max-w-screen-lg mx-auto px-5 py-24 flex flex-col md:flex-row items-center gap-16 md:gap-24"
->
+<Container class="py-20 flex flex-col md:flex-row items-center gap-16 md:gap-24">
 	<div class="flex-1 text-center md:text-left">
-		<h2 class="max-w-md mx-auto leading-10 font-display font-semibold tracking-wide text-3xl">
+		<h2
+			class="max-w-md mx-auto leading-9 md:leading-10 font-display font-semibold tracking-wide text-2xl md:text-3xl"
+		>
 			Ngoprek Jadi Makin Seru Karena Rame-rame
 		</h2>
 		<p class="max-w-lg mx-auto leading-7 dimmed mt-2.5">
-			Kamu bisa tanya-tanya, sharing knowledge dan bagi-bagi tips ke semua orang. Yuk kita kembangin
+			Kamu bisa tanya-tanya, sharing knowledge dan berbagi tips ke semua orang. Yuk kita kembangin
 			skill bareng-bareng. Together we are strong!
 		</p>
 	</div>
 	<div class="flex-1">
 		<StorysetHandCoding class="w-72 h-72 lg:w-80 lg:h-80" />
 	</div>
-</div>
+</Container>
 
-<div class="w-full max-w-screen-lg mx-auto px-5 py-9 text-center">
+<Container class="pt-2 pb-8 text-center">
 	<p class="dimmed text-sm mb-4">
 		Special thanks to <a href="https://storyset.com/" class="text-blue-600">Storyset</a> for cool illustrations.
 	</p>
 	<p class="dimmed text-sm">Proudly made in Bandung</p>
-</div>
+</Container>
