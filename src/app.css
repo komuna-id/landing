@@ -5,8 +5,12 @@
 @tailwind utilities;
 
 @layer base {
+	html {
+		@apply h-full;
+	}
+
 	body {
-		@apply text-base font-medium tracking-wide bg-neutral-50 text-neutral-900;
+		@apply min-h-full relative text-base font-medium tracking-wide bg-neutral-50 text-neutral-900;
 	}
 
 	.dimmed {
